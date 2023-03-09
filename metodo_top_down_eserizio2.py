@@ -15,7 +15,6 @@ def volume_cilindro(raggio, altezza):
 
 def volume_cono(raggio, altezza):
     volume = (raggio**2 * pi * altezza)/3
-
     return volume
 
 def main():
@@ -24,11 +23,9 @@ def main():
     h2 = float(input("altezza coni: "))
     l = float(input("lato castello: "))
 
-
     cubo = volume_cubo(l)
     cilindro = volume_cilindro(r, h)
     cono = volume_cono(r, h2)
-    print(cubo, cilindro, cono)
     print("volume castello: ", cubo + cilindro * 4 + cono * 4)
 
 main()
