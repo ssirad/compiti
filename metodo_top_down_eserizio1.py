@@ -1,7 +1,7 @@
 '''
 Esercizio 1: Si vuole calcolare la superficie di un razzo approssimabile come corpo a un cilindro (raggio di base r e altezza h1),
 come testa a un cono (raggio di base sempre r e altezza h2) e con 4 alettoni approssimabili a dei triangoli rettangoli uguali
-(di cateti c1 e c2 e spessore inrilevante).
+(di cateti c1 e c2 e spessore irrilevante).
 '''
 from math import pi, sqrt
 
@@ -15,6 +15,7 @@ def area_cilindro(raggio, altezza):
     area_laterale = raggio * altezza * pi
     area_tot = area_laterale + pi * raggio**2
     return area_tot
+
 def area_cono(raggio, altezza):
     #   cono = πr * a
     apotema = sqrt(raggio**2 + altezza**2)
@@ -35,4 +36,3 @@ def main():
     print(area_razzo)
 main()
 
-#24 righe in tutto
