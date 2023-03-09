@@ -7,7 +7,7 @@ from math import pi, sqrt
 
 def area_alettoni(cat_1, cat_2):
     #   area triangolo = (b * h)/2
-    area = (cat_1 * cat_2)/2
+    area = (cat_1 * cat_2)
     return area
 
 def area_cilindro(raggio, altezza):
@@ -33,6 +33,7 @@ def main():
     cilindro = area_cilindro(r, h1)
     cono = area_cono(r, h2)
     area_razzo = alettoni * 4, cilindro, cono
-    print(area_razzo)
+    print("l'area del razzo è: ", area_razzo)
+    
 main()
 
